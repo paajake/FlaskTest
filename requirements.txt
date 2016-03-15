@@ -14,9 +14,6 @@ cffi==1.2.1
 clyent==1.2.0
 colorama==0.3.6
 comtypes==1.1.2
-conda==4.0.4
-conda-build==1.19.0
-conda-env==2.4.5
 configobj==5.0.6
 cryptography==1.0.1
 cycler==0.10.0

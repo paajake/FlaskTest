@@ -4,7 +4,7 @@ from forms import SignupForm, LoginForm, AddressForm
 
 app = Flask(__name__)
 
-app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://nrgajhzhahqhyp:BxjqC-uW8FoxLXqucLpm0ICxF0@ec2-54-225-151-64.compute-1.amazonaws.com/flask_test'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'postgres://nrgajhzhahqhyp:BxjqC-uW8FoxLXqucLpm0ICxF0@ec2-54-225-151-64.compute-1.amazonaws.com:5432/deubta48oroqn3'
 db.init_app(app)
 
 app.secret_key = "development-key"
@@ -17,7 +17,8 @@ def index():
 def about():
   return render_template("about.html")
 
-@app.route("/signup", methods=["GET", "POST"])
+@app.route("/signup", methods=["GE"
+                               "T", "POST"])
 def signup():
   if 'email' in session:
     return redirect(url_for('home'))
